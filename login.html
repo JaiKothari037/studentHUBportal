@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>StudentHub Portal</h1>
+        <p>Account Authentication</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="student.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>User Login</h2>
+            <form action="#" method="post">
+                <p>
+                    <label for="username">Username / Email:</label><br>
+                    <input type="text" id="username" name="username" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </p>
+                <p>
+                    <label for="role">User Role:</label><br>
+                    <select id="role" name="role">
+                        <option value="student">Student</option>
+                        <option value="faculty">Faculty</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </p>
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
+    </footer>
+    <script src="js/scipt.js"></script>
+</body>
+</html>
