@@ -64,3 +64,14 @@ if (banner && closebtn)
         console.log('banner close clicked')
     });
 }
+
+/* ---------- */
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('nav-menu');
+
+if (hamburgerBtn && navMenu) {
+    hamburgerBtn.addEventListener('click', function() {
+        navMenu.classList.toggle('show');
+    });
+}
