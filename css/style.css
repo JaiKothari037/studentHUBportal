@@ -1,0 +1,150 @@
+h1 {
+    color: green;
+}
+
+.welcome
+{
+    font-family : "Lucida Handwriting";
+}
+
+body 
+{
+    font-family : Arial, sans-serif;         
+}
+
+body.dark-mode
+{
+    font-family : Arial, sans-serif;
+    background-color : black;
+    color : white;
+}
+
+header
+{
+    font-family : "Copperplate";
+    background-color : lightgreen;
+    color : black;
+}
+
+footer
+{
+    font-family : "Courier New";
+    background-color : grey;
+    color : black;
+}
+
+nav ul
+{
+    list-style-type : None;
+    margin : 0;
+    padding : 5;
+    display : flex;
+    flex-wrap : wrap;
+    background-color : grey;
+}
+
+nav ul li a
+{
+    color : black;
+    display : block;
+    text-decoration : none;
+    padding : 15px 20px;
+}
+
+.for-grid
+{
+    display:grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 1px;
+    background-color: black;
+    border: 1px solid black;
+    width:fit-content;
+
+}
+.for-grid .lec , .day
+{
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.faqa
+{
+    display: none !important;
+}
+
+.faqa.show
+{
+    display: block !important;
+}
+
+.modal-overlay
+{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-box
+{
+    background-color:white;
+    text-align: center;
+}
+
+.close-btn
+{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-weight:bold;
+    cursor: pointer;
+    color: black;
+}
+
+.close-btn:hover
+{
+    color:red;
+}
+
+.modal-overlay.show
+{
+    display: flex !important;
+}
+
+.notificationbanner
+{
+    background-color: lightyellow;
+    color: darkred;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 14px;
+
+}
+
+.close-notif-banner
+{
+    background:none;
+    border:none;
+    font-size:20px;
+    font-weight:bold;
+    color: black;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.close-notif-banner:hover
+{
+    color: red;
+}

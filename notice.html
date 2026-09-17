@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Notices</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <div id="notificationbanner" class="notificationbanner">
+        <span> System maintenance scheduled for tonight. Website will be temporarily closed </span>
+        <button id="close-notif-banner" class="close-notif-banner">&times;</button>
+    </div>
+    <header class="p-3 text-center">
         <h1>Department Notices</h1>
     </header>
 
@@ -15,22 +20,40 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="student.html">Dashboard</a></li>
+            <button id="toggletheme" class="btntoggle">Toggle Theme</button>
         </ul>
     </nav>
 
-    <main>
+    <main class="container my-4">
         <section>
-            <h2>Recent Announcements</h2>
-            <article>
-                <h3>Mid-Semester Exam Schedule</h3>
-                <p>Published on: August 2026. Please check your portals for exam room allocations.</p>
+            <h2> <strong> Recent Announcements </strong></h2>
+            <article class="card shadow-sm mb-3">
+                <div class="card-body">
+                    <span class="badge bg-danger mb-2">Important</span>
+                    <h3 class="card-title h5">Mid-Semester Exam Schedule</h3>
+                    <p class="card-text text-muted">Published on: August 2026. Please check your portals for exam room allocations.</p>
+                    <button id="open-modal-btn" class="btn btn-sm btn-outline-success">View Timetable</button>
+                </div>
             </article>
         </section>
+
+        <div id="timetable-modal" class="modal-overlay">
+            <div class="modal-box">
+
+                <span id="close-modal-btn" class="close-btn">
+                    &times;
+                </span>
+
+                <h3>Notice</h3>
+                <p>timetable not found</p>
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
+    <footer class="p-3 text-center">
+        <p class="m-0" >&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/scipt.js"></script>
 </body>
 </html>

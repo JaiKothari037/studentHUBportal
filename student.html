@@ -1,12 +1,19 @@
+<!-- this is the student dashboard -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Student Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="notificationbanner" class="notificationbanner">
+        <span> System maintenance scheduled for tonight. Website will be temporarily closed </span>
+        <button id="close-notif-banner" class="close-notif-banner">&times;</button>
+    </div>
     <header>
         <h1>Student Dashboard</h1>
     </header>
@@ -20,15 +27,28 @@
             <li><a href="assignment.html">Assignments</a></li>
             <li><a href="notice.html">Notices</a></li>
             <li><a href="file.html">Materials</a></li>
+            <button id="toggletheme" class="btntoggle">Toggle Theme</button>
         </ul>
     </nav>
 
     <main>
         <section>
             <h2>Dashboard Overview</h2>
-            <article>
-                <h3>Timetable</h3>
-                <p>Today's Schedule: WDF Practical, Computer Networks Lecture.</p>
+            <h3>Timetable</h3>
+            <article class="for-grid">
+                <div class="day"> <strong> Monday </strong> </div>
+                <div class="lec"> WDF </div>
+                <div class="lec"> FDSA </div>
+                <div class="lec"> CN </div> 
+                <div class="day"> <strong> Tuesday </strong> </div>
+                <div class="lec"> HSUV </div>
+                <div class="lec"> OOP </div>
+                <div class="lec"> MATH </div>
+                <div class="day"> <strong> Wednesday </strong> </div>
+                <div class="lec"> FDSA </div>
+                <div class="lec"> CN </div>
+                <div class="lec"> WDF </div>
+
             </article>
             <article>
                 <h3>Attendance Summary</h3>
@@ -40,6 +60,7 @@
     <footer>
         <p>&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/scipt.js"></script>
 </body>
 </html>

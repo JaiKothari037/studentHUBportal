@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudentHub - Admin Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="notificationbanner" class="notificationbanner">
+        <span> System maintenance scheduled for tonight. Website will be temporarily closed </span>
+        <button id="close-notif-banner" class="close-notif-banner">&times;</button>
+    </div>
     <header>
         <h1>Admin Control Panel</h1>
     </header>
@@ -15,6 +20,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="login.html">Logout</a></li>
+            <button id="toggletheme" class="btntoggle">Toggle Theme</button>
         </ul>
     </nav>
 
@@ -35,6 +41,7 @@
     <footer>
         <p>&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="js/scipt.js"></script>
 </body>
 </html>
