@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> SIGN UP </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>SIGNUP PAGE</h1>
+            <p class = "welcome">Welcome to Charusat Academic Portal</p>
+        </header>
+        
+        <h3>signup</h3>
+
+        <section class="signupbox">
+            <form id="signupform" action="process.php" method="POST">
+                <br>
+                <label for="name">enter first name</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">enter email</label>
+                <input type="text" id="email" name="email" required>
+                <br>
+                <label for="number">enter mobile number</label>
+                <input type="text" id="number" required minlength="10" maxlength="10">
+                <br>
+                <p> first letter should be a number, last letter should be a special character</p>
+                <label for="password">enter password</label>
+                <input type="password" id="password" name="password" required minlength="5">
+                <br>
+                <label for="confpass">enter password again</label>
+                <input type="password" id="confpass" name="confirmpassword" required>
+                <br>
+                <label for="course">enter course</label>
+                <input type="text" id="course" name="course" required>
+                <br>
+                <label for="year">enter year of graduation</label>
+                <input type="text" id="year" name="year" required min="2000" max="2050">
+                <br>
+                <label for="entergender">enter gender</label>
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" >
+                <label for="female">female</label>
+                <br>
+                <label for="terms">agree to terms and conditions</label>
+                <input type="checkbox" id="terms" required>
+                <br>
+                <input type="submit" id="subbtn">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 StudentHub - FTE Charusat. All rights reserved.</p>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="js/scipt.js"></script>
+    </body>
+</html>

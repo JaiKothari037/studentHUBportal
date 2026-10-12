@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "category": "general",
+        "question": "who was this website built by?",
+        "answer": "it was made by jai kothari"
+    },
+    {
+        "id": 2,
+        "category": "academics",
+        "question":"which subject is this?",
+        "answer": "this subject is web development frameworks"
+    },
+    {
+        "id": 3,
+        "category": "technical",
+        "question": "when was this website made?",
+        "answer": "this website was made in the secon sem"
+    },
+    {
+        "id": 4,
+        "category": "general",
+        "question": "what to do if i have a doubt",
+        "answer": "go to contacts page"
+    },
+    {
+        "id": 5,
+        "category": "academics",
+        "question": "what is student hub portal?",
+        "answer": "student hub portal is a website that organises complete student information regarding studies and administrative information."
+    }
+]

@@ -50,7 +50,7 @@
     <section class="faq">
         <h4> FREQUENCTLY ASKED QUESTIONS </h4>
 
-        <div class="faqitem">
+        <!-- <div class="faqitem">
             <button class="faqq">what is student hub portal?</button>
             <div class="faqa">
                 <p> student hub portal is a website that organises complete student information regarding studies and administrative information.</p>
@@ -61,7 +61,21 @@
             <div class="faqa">
                 <p> go to contacts page </p>
             </div>
+
+        </div> -->
+
+        <div class="faq-search-box">
+            <input type="text" id="faq-search" placeholder="Search-Questions...">
+
+            <select id="faq-category">
+                <option value="All">All categories</option>
+                <option value="general">general</option>
+                <option value="technical">technical</option>
+                <option value="academics">academics</option>
+            </select>
         </div>
+
+        <div id="faq-container"></div>
         
     </section>
 

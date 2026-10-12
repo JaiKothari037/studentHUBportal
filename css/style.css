@@ -9,7 +9,7 @@ h1 {
 
 body 
 {
-    font-family : Arial, sans-serif;         
+    font-family : Arial, sans-serif;      
 }
 
 body.dark-mode
@@ -81,6 +81,7 @@ nav ul li a
     display: block !important;
 }
 
+/* modal popup defualt features */
 .modal-overlay
 {
     display: none;
@@ -115,6 +116,7 @@ nav ul li a
     color:red;
 }
 
+/*modal popup when shown*/
 .modal-overlay.show
 {
     display: flex !important;
@@ -159,6 +161,7 @@ nav ul li a
     padding: 10px 15px;
 }
 
+/*for hamburger menu in phone*/
 @media (max-width: 768px) {
     .hamburger-btn {
         display: block;
@@ -173,4 +176,21 @@ nav ul li a
     nav ul.show {
         display: flex !important;
     }
+}
+
+/*signup page*/
+
+.signupform
+{
+    align-items: center;
+}
+
+.signupform input:valid
+{
+    border: 2px solid green;
+}
+
+.signupform input:invalid
+{
+    border: 2px solid red;
 }
