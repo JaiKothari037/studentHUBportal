@@ -194,3 +194,19 @@ nav ul li a
 {
     border: 2px solid red;
 }
+
+/*practical 10*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+.login-container {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.error { color: red; }
+.success { color: green; }

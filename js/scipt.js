@@ -28,17 +28,17 @@ if (togglebtn)
 
 /* collapsible FAQ */
 
-// const faqquestions = document.querySelectorAll('.faqq')
+const faqquestions = document.querySelectorAll('.faqq')
 
-// faqquestions.forEach(function(question) {
-//     question.addEventListener('click', function() {
-//         const answer = question.nextElementSibling
-//         if (answer)
-//         {
-//             answer.classList.toggle('show')
-//         }
-//     })
-// })
+faqquestions.forEach(function(question) {
+    question.addEventListener('click', function() {
+        const answer = question.nextElementSibling
+        if (answer)
+        {
+            answer.classList.toggle('show')
+        }
+    })
+})
 
 /* modal popup */
 
@@ -232,5 +232,3 @@ function filterFAQs()
 
     renderFAQs(filteredList)
 }   
-
-//pagination
